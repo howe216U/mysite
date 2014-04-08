@@ -1,6 +1,6 @@
 from django.shortcuts import render
 import MySQLdb
-
+from django.http import HttpResponse
 def book_list(request):
     db = MySQLdb.connect(user='me', db='mydb', passwd='secret', host='localhost')
     cursor = db.cursor()
