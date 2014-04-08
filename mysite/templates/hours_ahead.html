@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Future time{% endblock %}
+
+{% block content %}
+<p>In {{ one }} hour(s), it will be {{two }}.</p>
+<p> Quote of the day is " {{three}}". </p>
+
+List:
+<ul>
+{% for item  in item_list %}
+    <li>{{ item.name }}		 {{item.value}} </li>
+{% endfor %}
+</ul>
+End of List
+{% endblock %}

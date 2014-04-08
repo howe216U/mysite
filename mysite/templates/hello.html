@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}<H3>HELLO</H3>{% endblock %}
+
+{% block content %}
+<p>It is now {{ current_date }}.</p>
+    <br><a href="http://162.243.118.203:8000/date">date</a>
+    <br><a href="http://162.243.118.203:8000/time">time</a>
+    <br><a href="http://162.243.118.203:8000/time/plus/1/">example + 1</a>
+    <br><a href="http://162.243.118.203:8000/time/plus/2/">example + 2 </a>
+    <br><a href="http://162.243.118.203:8000/time/plus/3/">example + 3 </a>
+    <br><a href="http://162.243.118.203:8000/search-form/">Search-form</a>
+{% endblock %}
+{% block back %}{% endblock %}
